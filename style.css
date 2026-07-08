@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+#container {
+  width: 90%;
+  max-width: 600px;
+}
+
+#quiz {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#questionNumber {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#question {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#answerButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.option:hover {
+  background: #f1f5ff;
+  border-color: #667eea;
+}
+
+.correct {
+  background: #4caf50;
+  color: white;
+  border: #4caf50;
+}
+
+.wrong {
+  background: #f44336;
+  color: white;
+  border: #f44336;
+}
+
+#nextBtn {
+  display: block;
+  margin: 20px auto 0;
+  margin-top: 20px;
+  width: 50%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #667eea;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+#nextBtn:hover {
+  background: #5563c1;
+}
+
+#score {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* Result Screen */
+
+#result {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+#result h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#result p {
+  font-size: 22px;
+  font-weight: bold;
+  color: #667eea;
+  margin-bottom: 30px;
+}
+
+#restartBtn {
+  width: 50%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #667eea;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#restartBtn:hover {
+  background: #5563c1;
+  transform: translateY(-2px);
+}
